@@ -1,0 +1,26 @@
+
+# Python/Django
+*__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtualenvs
+venv/
+myenv/
+.env
+.env.*
+
+# Django / local files
+db.sqlite3
+media/
+
+# IDEs / OS
+.vscode/
+.idea/
+
+# packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
