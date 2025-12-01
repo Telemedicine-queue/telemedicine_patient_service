@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'patients'
+    'core',
+    'telemedicine_queue_django.apps.patients',
+    'telemedicine_queue_django.apps.appointments',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -79,6 +82,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+REDIS_HOST = 'localhost' # Use 'redis' if running in Docker, 'localhost' otherwise
+REDIS_PORT = 6379       # Standard Redis port
+REDIS_DB = 0            # Default Redis database index
 
 
 # Password validation
