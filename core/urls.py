@@ -1,4 +1,4 @@
-# core/urls.py
+# core/urls.pyyy
 from django.urls import path
 from .views import health_check
 
